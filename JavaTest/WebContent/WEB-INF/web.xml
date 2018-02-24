@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<web-app xmlns="http://java.sun.com/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd"
+	version="3.0">
+
+	<context-param>
+		<param-name>companyName</param-name>
+		<param-value>itcast</param-value>
+	</context-param>
+	<context-param>
+		<param-name>address</param-name>
+		<param-value>beijing</param-value>
+	</context-param>
+	<servlet>
+		<servlet-name>HelloWorldServlet</servlet-name>
+		<servlet-class>cn.itcast.firstapp.servlet.HelloWorldServlet
+		</servlet-class>
+	</servlet>
+	<!-- The mapping for the default servlet -->
+	<servlet-mapping>
+		<servlet-name>HelloWorldServlet</servlet-name>
+		<url-pattern>/HelloWorldServlet</url-pattern>
+	</servlet-mapping>
+	<servlet>
+		<servlet-name>TestServlet02</servlet-name>
+		<servlet-class>cn.itcast.servlet.TestServlet02</servlet-class>
+		<init-param>
+			<param-name>encoding</param-name>
+			<param-value>utf-8</param-value>
+		</init-param>
+	</servlet>
+	<!-- The mapping for the default servlet -->
+	<servlet-mapping>
+		<servlet-name>TestServlet02</servlet-name>
+		<url-pattern>/TestServlet02</url-pattern>
+	</servlet-mapping>
+	<servlet>
+		<servlet-name>TestServlet03</servlet-name>
+		<servlet-class>cn.itcast.servlet.TestServlet03</servlet-class>
+		<init-param>
+			<param-name>encoding</param-name>
+			<param-value>utf-8</param-value>
+		</init-param>
+	</servlet>
+	<!-- The mapping for the default servlet -->
+	<servlet-mapping>
+		<servlet-name>TestServlet03</servlet-name>
+		<url-pattern>/TestServlet03</url-pattern>
+	</servlet-mapping>
+	<servlet>
+		<servlet-name>TestServlet04</servlet-name>
+		<servlet-class>cn.itcast.servlet.TestServlet04</servlet-class>
+	</servlet>
+	<!-- The mapping for the default servlet -->
+	<servlet-mapping>
+		<servlet-name>TestServlet04</servlet-name>
+		<url-pattern>/TestServlet04</url-pattern>
+	</servlet-mapping>
+	<servlet>
+		<servlet-name>TestServlet05</servlet-name>
+		<servlet-class>cn.itcast.servlet.TestServlet05</servlet-class>
+	</servlet>
+	<!-- The mapping for the default servlet -->
+	<servlet-mapping>
+		<servlet-name>TestServlet05</servlet-name>
+		<url-pattern>/TestServlet05</url-pattern>
+	</servlet-mapping>
+		<servlet>
+		<servlet-name>TestServlet06</servlet-name>
+		<servlet-class>cn.itcast.servlet.TestServlet06</servlet-class>
+	</servlet>
+	<!-- The mapping for the default servlet -->
+	<servlet-mapping>
+		<servlet-name>TestServlet06</servlet-name>
+		<url-pattern>/TestServlet06</url-pattern>
+	</servlet-mapping>
+
+	<!-- ==================== Default Welcome File List ===================== -->
+	<!-- When a request URI refers to a directory, the default servlet looks -->
+	<!-- for a "welcome file" within that directory and, if present, to the -->
+	<!-- corresponding resource URI for display. -->
+	<!-- If no welcome files are present, the default servlet either serves 
+		a -->
+	<!-- directory listing (see default servlet configuration on how to -->
+	<!-- customize) or returns a 404 status, depending on the value of the -->
+	<!-- listings setting. -->
+	<!-- -->
+	<!-- If you define welcome files in your own application's web.xml -->
+	<!-- deployment descriptor, that list *replaces* the list configured -->
+	<!-- here, so be sure to include any of the default values that you wish -->
+	<!-- to use within your application. -->
+
+	<welcome-file-list>
+		<welcome-file>index.html</welcome-file>
+		<welcome-file>index.htm</welcome-file>
+		<welcome-file>index.jsp</welcome-file>
+	</welcome-file-list>
+
+</web-app>
+ 
