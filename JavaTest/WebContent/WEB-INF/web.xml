@@ -66,7 +66,7 @@
 		<servlet-name>TestServlet05</servlet-name>
 		<url-pattern>/TestServlet05</url-pattern>
 	</servlet-mapping>
-		<servlet>
+	<servlet>
 		<servlet-name>TestServlet06</servlet-name>
 		<servlet-class>cn.itcast.servlet.TestServlet06</servlet-class>
 	</servlet>
@@ -74,6 +74,24 @@
 	<servlet-mapping>
 		<servlet-name>TestServlet06</servlet-name>
 		<url-pattern>/TestServlet06</url-pattern>
+	</servlet-mapping>
+	<servlet>
+		<servlet-name>ChineseServlet</servlet-name>
+		<servlet-class>cn.itcast.servlet.ChineseServlet</servlet-class>
+	</servlet>
+	<!-- The mapping for the default servlet -->
+	<servlet-mapping>
+		<servlet-name>ChineseServlet</servlet-name>
+		<url-pattern>/ChineseServlet</url-pattern>
+	</servlet-mapping>
+	<servlet>
+		<servlet-name>RequestLineServlet</servlet-name>
+		<servlet-class>cn.itcast.servlet.RequestLineServlet</servlet-class>
+	</servlet>
+	<!-- The mapping for the default servlet -->
+	<servlet-mapping>
+		<servlet-name>RequestLineServlet</servlet-name>
+		<url-pattern>/RequestLineServlet</url-pattern>
 	</servlet-mapping>
 
 	<!-- ==================== Default Welcome File List ===================== -->
