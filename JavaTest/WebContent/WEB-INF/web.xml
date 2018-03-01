@@ -93,6 +93,67 @@
 		<servlet-name>RequestLineServlet</servlet-name>
 		<url-pattern>/RequestLineServlet</url-pattern>
 	</servlet-mapping>
+	<servlet>
+		<servlet-name>TestFilter01</servlet-name>
+		<servlet-class>cn.itcast.servlet.TestFilter01</servlet-class>
+	</servlet>
+	<!-- The mapping for the default servlet -->
+	<servlet-mapping>
+		<servlet-name>TestFilter01</servlet-name>
+		<url-pattern>/TestFilter01</url-pattern>
+	</servlet-mapping>
+	<servlet>
+		<servlet-name>FowardServlet</servlet-name>
+		<servlet-class>cn.itcast.servlet.FowardServlet</servlet-class>
+	</servlet>
+	<!-- The mapping for the default servlet -->
+	<servlet-mapping>
+		<servlet-name>FowardServlet</servlet-name>
+		<url-pattern>/FowardServlet</url-pattern>
+	</servlet-mapping>
+	<servlet>
+		<servlet-name>TestFilterChain01</servlet-name>
+		<servlet-class>cn.itcast.servlet.TestFilterChain01</servlet-class>
+	</servlet>
+	<!-- The mapping for the default servlet -->
+	<servlet-mapping>
+		<servlet-name>TestFilterChain01</servlet-name>
+		<url-pattern>/TestFilterChain01</url-pattern>
+	</servlet-mapping>	
+
+	<filter>
+		<filter-name>MyFilter01</filter-name>
+		<filter-class>cn.itcast.filter.MyFilter01</filter-class>
+	</filter>
+	<filter-mapping>
+		<filter-name>MyFilter01</filter-name>
+		<url-pattern>/TestFilter01</url-pattern>
+	</filter-mapping>
+	<filter>
+		<filter-name>ForwardFilter</filter-name>
+		<filter-class>cn.itcast.filter.ForwardFilter</filter-class>
+	</filter>
+	<filter-mapping>
+		<filter-name>ForwardFilter</filter-name>
+		<url-pattern>/first.jsp</url-pattern>
+		<dispatcher>FORWARD</dispatcher>
+	</filter-mapping>
+	<filter>
+		<filter-name>FilterChainTest01</filter-name>
+		<filter-class>cn.itcast.filter.FilterChainTest01</filter-class>
+	</filter>
+	<filter-mapping>
+		<filter-name>FilterChainTest01</filter-name>
+		<url-pattern>/TestFilterChain01</url-pattern>
+	</filter-mapping>
+	<filter>
+		<filter-name>FilterChainTest02</filter-name>
+		<filter-class>cn.itcast.filter.FilterChainTest02</filter-class>
+	</filter>
+	<filter-mapping>
+		<filter-name>FilterChainTest02</filter-name>
+		<url-pattern>/TestFilterChain01</url-pattern>
+	</filter-mapping>
 
 	<!-- ==================== Default Welcome File List ===================== -->
 	<!-- When a request URI refers to a directory, the default servlet looks -->

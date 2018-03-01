@@ -11,6 +11,9 @@ import javax.servlet.http.HttpServletResponse;
 public class TestServlet04 extends HttpServlet {
 
 	/*
+	 * ServletContext：Servlet的上下文环境
+	 */
+	/*
 	 * use TestServlet04 to set attribute "data";
 	 */
 	/*

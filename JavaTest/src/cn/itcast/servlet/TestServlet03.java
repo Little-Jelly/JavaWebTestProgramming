@@ -12,6 +12,9 @@ import javax.servlet.http.HttpServletResponse;
 
 public class TestServlet03 extends HttpServlet {
 
+	/*
+	 * 使用ServletContext实现同一个web应用中的数据传输与共享
+	 */
 	/* (non-Javadoc)
 	 * @see javax.servlet.http.HttpServlet#doGet(javax.servlet.http.HttpServletRequest, javax.servlet.http.HttpServletResponse)
 	 */

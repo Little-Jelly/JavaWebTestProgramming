@@ -11,6 +11,9 @@ import javax.servlet.http.HttpServletResponse;
 
 public class TestServlet02 extends HttpServlet {
 
+	/*
+	 * ServletConfig£∫Servlet≈‰÷√
+	 */
 	/* (non-Javadoc)
 	 * @see javax.servlet.http.HttpServlet#doGet(javax.servlet.http.HttpServletRequest, javax.servlet.http.HttpServletResponse)
 	 */

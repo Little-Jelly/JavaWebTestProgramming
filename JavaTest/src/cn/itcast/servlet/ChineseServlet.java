@@ -10,6 +10,10 @@ import javax.servlet.http.HttpServletResponse;
 
 public class ChineseServlet extends HttpServlet {
 
+	
+	/*
+	 * 用来实现解决输出的乱码问题
+	 */
 	/* (non-Javadoc)
 	 * @see javax.servlet.http.HttpServlet#doGet(javax.servlet.http.HttpServletRequest, javax.servlet.http.HttpServletResponse)
 	 */

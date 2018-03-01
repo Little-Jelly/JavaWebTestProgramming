@@ -11,6 +11,9 @@ import javax.servlet.http.HttpServletResponse;
 
 public class TestServlet05 extends HttpServlet {
 
+	/*
+	 * ServletContext：Servlet的上下文环境
+	 */
 	/* (non-Javadoc)
 	 * @see javax.servlet.http.HttpServlet#doGet(javax.servlet.http.HttpServletRequest, javax.servlet.http.HttpServletResponse)
 	 */

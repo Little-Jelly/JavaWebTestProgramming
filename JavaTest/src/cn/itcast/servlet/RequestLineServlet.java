@@ -10,6 +10,9 @@ import javax.servlet.http.HttpServletResponse;
 
 public class RequestLineServlet extends HttpServlet {
 
+	/*
+	 * 体验一下Request对象的各种方法
+	 */
 	/* (non-Javadoc)
 	 * @see javax.servlet.http.HttpServlet#doGet(javax.servlet.http.HttpServletRequest, javax.servlet.http.HttpServletResponse)
 	 */
