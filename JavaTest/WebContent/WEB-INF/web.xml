@@ -120,6 +120,15 @@
 		<servlet-name>TestFilterChain01</servlet-name>
 		<url-pattern>/TestFilterChain01</url-pattern>
 	</servlet-mapping>	
+	<servlet>
+		<servlet-name>LastAccessServlet</servlet-name>
+		<servlet-class>cn.itcast.session.LastAccessServlet</servlet-class>
+	</servlet>
+	<!-- The mapping for the default servlet -->
+	<servlet-mapping>
+		<servlet-name>LastAccessServlet</servlet-name>
+		<url-pattern>/LastAccessServlet</url-pattern>
+	</servlet-mapping>
 
 	<filter>
 		<filter-name>MyFilter01</filter-name>
