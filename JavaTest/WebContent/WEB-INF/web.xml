@@ -128,6 +128,15 @@
 	<servlet-mapping>
 		<servlet-name>LastAccessServlet</servlet-name>
 		<url-pattern>/LastAccessServlet</url-pattern>
+	</servlet-mapping>ListBookServlet
+	<servlet>
+		<servlet-name>ListBookServlet</servlet-name>
+		<servlet-class>cn.itcast.session.ListBookServlet</servlet-class>
+	</servlet>
+	<!-- The mapping for the default servlet -->
+	<servlet-mapping>
+		<servlet-name>ListBookServlet</servlet-name>
+		<url-pattern>/ListBookServlet</url-pattern>
 	</servlet-mapping>
 
 	<filter>
